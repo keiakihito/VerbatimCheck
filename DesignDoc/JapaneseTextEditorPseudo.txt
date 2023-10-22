@@ -1,0 +1,70 @@
+0.	Start
+
+//INPUT
+1.	Extract text from the rewrite
+2.	Slice texts as a single sentence
+3.	Store them as a list of texts
+4.	Extract texts from the model
+5.	Slice texts as a single sentence
+6.	Store them as a list of texts.
+7.	Set the number of consecutive letter
+
+8. Display detective lettters and rewrite and model //Call a Method a
+
+
+// Method a
+// Input: list of rewrite, lst of model
+// Process: display detective sentece in the rewrite and model
+// Output: void
+    //PROCESS
+8.	Set loop which iterates the first index to the last index in the rewrite list of texts
+		Check the length of the rewrite sentence
+9.		if the length is smaller than the number of consecutive letter
+			Back to 8 // Continue
+10. 	else 
+			Set loop which iterates the first index to the last index in the model list of texts
+11.			Check the length of the rewrite sentence
+12.				if the length is smaller than the number of consecutive letter
+						Back to 8 // Continue
+					else 
+						Search detective letters // call Method b
+						if there is a consecutive letters // OUTPUT
+							Disylay consecutive letters, rewrite sentence, and model sentence
+							/*It means the current rewrite sentence needs to check
+							*No more check current rewrite sentence, 
+							*Move to the next rewrite sentence to check detective letters. 
+							*/
+							Exit inner loop 
+						else 
+							Continue // Compare current rewrite sentence and next model sentence
+
+
+13. 					
+
+						Compare the sentence in the rewrite list and the sentence in the model
+						Detect consecutive letters // Call method b
+			Display the current rewrite sentence and the consecutive letter
+
+					
+
+		//Method b
+		//Input: sentence of rewrite, sentence of model
+		//Process: Compare two sentences and detect consecutive letters
+		//Outpu: consecutive letters
+13.	Calculate the last required index of rewrite sentence
+			// the length of rewrite sentence – number of consecutive letter
+14.	Calculate the last required index of model sentence
+			// the length of rewrite sentence – number of consecutive letter
+15.		Set loop which iterates the first index of rewrite text to the required last index
+16.			Set loop whish iterates the first index of model text to the required last index
+17.				Parse the consecutive letter from the current index of rewrite
+18.				Parse the consecutive letter from the current index of model
+19.				Check the consecutive letters whether it equals or not.
+						if it is equals
+							return Parse of string // The result of detection
+						else
+							Continue // back to 16
+
+
+			
+			

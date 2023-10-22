@@ -22,6 +22,9 @@ The program  is for super raters' verbatim detection check process. It aims to r
 
 
 
+
+
+
 # Sample Run
 
 <br> - - - - - Compare your rewrite and model summary  - - - - - 

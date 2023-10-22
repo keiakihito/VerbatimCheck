@@ -9,6 +9,8 @@ import java.util.regex.Pattern;
 
 public class Tools {
 
+    //It will be adjusted how many number is consecutive letters.
+    //Temporary it is  15, but it can be 10 or 20.
     static final int NUMBER_OF_CONSECCUTIVE_LETTER = 15;
     // Declaring ANSI_RESET so that we can reset the color
     public static final String ANSI_RESET = "\u001B[0m";
@@ -38,7 +40,7 @@ public class Tools {
     }
 
     /**
-     * The method takes file source and  separte sentences, and sore each sentence to the ArrayList.
+     * The method takes file source and  separate sentences, and sore each sentence to the ArrayList.
      * @Param String fileObj, it is text file data extracting rewrite or model source
      * @Return ArrayList<String> listOfSentences, the Array list aggregates sliced text
      */

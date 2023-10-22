@@ -1,5 +1,28 @@
 # VerbatimCheck
-The simple program extracts 3 files, compares the rewrite and model and compares rewrite and reference texts. It detects 15 consecutive Japanese letters, displays the verbatim letters, and refers to the verbatim in the model sentence and reference.
+   Author: Keita Katsumi
+   Last updated Oct 22. 2023
+   The program  is for super raters' verbatim detection check process.
+   It aims to reduce verbatim manual checking time and effort.
+   But it can check a single row every time. 
+ 
+   The VerbatimCheck program does the three things
+ 
+   1. Read three text files: rewrite.txt, model.txt, and reference txt
+   All the text information comes from the raters' Google sheet manually.
+   Extract the text data as a String, then store each sentence in the ArrayList<String>
+ 
+   2. Compare raters' rewrite and model response.
+   The program checks the number of consecutive letters in the rewrite in the model response.
+   If it is detected, the program shows
+   i. Consecutive letters,
+   ii. Rewrite sentence which has the consecutive letters,
+   iii. Model response sentence which has consecutive letters.
+ 
+   3. Compare the raters' rewrite and references.
+   It takes the same process  of section 2.
+ 
+   If you would like to discuss the future application or any issues,
+   please contact my google or GL email.
 
 #Sample Run #
 

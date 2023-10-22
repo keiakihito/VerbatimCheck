@@ -20,7 +20,9 @@ The program  is for super raters' verbatim detection check process. It aims to r
 <br>If you would like to discuss the future application or any issues,
 <br>please contact my google or GL email.
 
-#Sample Run #
+
+
+# Sample Run
 
 <br> - - - - - Compare your rewrite and model summary  - - - - - 
 

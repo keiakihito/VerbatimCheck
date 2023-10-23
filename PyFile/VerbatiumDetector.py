@@ -106,9 +106,9 @@ def display_detect_letters_and_sentences(list_of_rewrite, list_of_model):
 # main 
 # Input process section 1
 #The file path needs to be adjusted where you put rewrite.txt, mode.text, and reference.txt
-rewrite_obj = read_text_from_file("/Users/keita-katsumi/Dropbox/Programing/GitHub/GL/rewrite.txt")
-model_obj = read_text_from_file("/Users/keita-katsumi/Dropbox/Programing/GitHub/GL/model.txt")
-reference_obj = read_text_from_file("/Users/keita-katsumi/Dropbox/Programing/GitHub/GL/reference.txt")
+rewrite_obj = read_text_from_file("rewrite.txt")
+model_obj = read_text_from_file("model.txt")
+reference_obj = read_text_from_file("reference.txt")
 
 # Slice the long string from the given files into sentence strings
 list_of_rewrite = slice_japanese_text(rewrite_obj)

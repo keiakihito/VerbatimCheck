@@ -1,13 +1,13 @@
 # VerbatimCheck
-The program  is for super raters' verbatim detection check process. It aims to reduce verbatim manual checking time and effort. But it can check a single row every time. 
+The program  is for SR's verbatim detection check process. It aims to reduce verbatim manual checking time and effort. But it can check a single row every time. 
  
 * The VerbatimCheck program does the three things
  
 1. Read three text files: rewrite.txt, model.txt, and reference txt
-<br>All the text information comes from the raters' Google sheet manually.
+<br>All the text information comes from the spreadsheet manually.
 <br>Extract the text data as a String, then store each sentence in the ArrayList<String>
  
-2. Compare raters' rewrite and model response.
+2. Compare SR's rewrite and model response.
 <br>The program checks the number of consecutive letters in the rewrite in the model response.
 <br>If it is detected, the program shows
 <br> i. Consecutive letters,
@@ -18,7 +18,7 @@ The program  is for super raters' verbatim detection check process. It aims to r
 <br>It takes the same process  as section 2.
  
 <br>If you would like to discuss the future application or any issues,
-<br>please contact my Google or GL email.
+<br>please contact my email.
 
 <br> In the PyFile directory, one VerbatimDetector.py is available for the alternative version of the same process.
 

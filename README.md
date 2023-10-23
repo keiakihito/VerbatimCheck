@@ -12,13 +12,15 @@ The program  is for super raters' verbatim detection check process. It aims to r
 <br>If it is detected, the program shows
 <br> i. Consecutive letters,
 <br> ii. Rewrite the sentence which has the consecutive letters,
-<br> iii. Model response sentence which has consecutive letters.
+<br> iii. Model response sentence that has consecutive letters.
  
 3. Compare the raters' rewrite and references.
-<br>It takes the same process  of section 2.
+<br>It takes the same process  as section 2.
  
 <br>If you would like to discuss the future application or any issues,
-<br>please contact my google or GL email.
+<br>please contact my Google or GL email.
+
+<br> In the PyFile directory, one VerbatimDetector.py is available for the alternative version of the same process.
 
 
 

@@ -1,29 +1,29 @@
 '''
 /**
  * Author: Keita Katsumi
- * Last update Oct 22. 2023
+ * Last updated Oct 22. 2023
  * The program  is for super raters' verbatim detection check process.
  * It aims to reduce verbatim manual checking time and effort.
- * But it can check single row every time.
+ * But it can check a single row every time.
  *
- * The VerbatimCheck program do the three things
+ * The VerbatimCheck program does the three things
  *
  * 1. Read three text files: rewrite.txt, model.txt, and reference txt
- * All the text information come form raters google sheet manually.
- * Extract the text data as a String, then store each sentence to the ArrayList<String>
+ * All the text information comes form the raters' google sheet manually.
+ * Extract the text data as a String, then store each sentence in the ArrayList<String>
  *
  * 2. Compare raters' rewrite and model response.
- * The program check the number of consecutive letters in the rewrite are in the model response.
+ * The program checks the number of consecutive letters in the rewrite in the model response.
  * If it is detected, the program shows
  *   i. Consecutive letters,
  *   ii. Rewrite sentence which has the consecutive letters,
- *   iii. Model response sentence which has the consecutive letters.
+ *   iii. Model response sentence that has consecutive letters.
  *
- *   3. Compare raters' rewrite and references.
- *   It takes the same process  of section 2.
+ *   3. Compare the raters' rewrite and references.
+ *   It takes the same process as section 2.
  *
  *   If you would like to discuss the future application or any issues,
- *   please contact my google or GL email.
+ *   Please contact my Google or GL email.
  *
  */
 '''
@@ -98,8 +98,14 @@ def display_detect_letters_and_sentences(list_of_rewrite, list_of_model):
                 # Update the next detection number
                 counter += 1
 
+
+
+
+
+
+# main 
 # Input process section 1
-#The file path needs to be adjust where you put rewrite.txt, mode.text and reference.txt
+#The file path needs to be adjusted where you put rewrite.txt, mode.text, and reference.txt
 rewrite_obj = read_text_from_file("/Users/keita-katsumi/Dropbox/Programing/GitHub/GL/rewrite.txt")
 model_obj = read_text_from_file("/Users/keita-katsumi/Dropbox/Programing/GitHub/GL/model.txt")
 reference_obj = read_text_from_file("/Users/keita-katsumi/Dropbox/Programing/GitHub/GL/reference.txt")
@@ -109,13 +115,20 @@ list_of_rewrite = slice_japanese_text(rewrite_obj)
 list_of_model = slice_japanese_text(model_obj)
 list_of_reference = slice_japanese_text(reference_obj)
 
+#Process and output
 # Comparing raters' rewrite and model and detect verbatim if there exist
 print("\n\n - - - - - Compare your rewrite and model summary  - - - - - ")
 display_detect_letters_and_sentences(list_of_rewrite, list_of_model)
 
+#Process and output
 # Comparing raters' rewrite and reference and detect verbatim if there exist
 print("\n\n - - - - -  Compare your rewrite and reference - - - - - ")
 display_detect_letters_and_sentences(list_of_rewrite, list_of_reference)
+
+
+
+
+
 
 '''
 Sample Run

@@ -99,10 +99,12 @@ def display_detect_letters_and_sentences(list_of_rewrite, list_of_model):
 
 # main 
 # Input process section 1
-#The file path needs to be adjusted where you put rewrite.txt, mode.text, and reference.txt
-rewrite_obj = read_text_from_file("rewrite.txt")
-model_obj = read_text_from_file("model.txt")
-reference_obj = read_text_from_file("reference.txt")
+# Using google complier editor
+# Since it cannot read other files, it needs to store all file informaton as a one big string.    
+rewrite_obj = "要約とは、文章などの要点をとりまとめることです。また、そのまとめたものを指します。 一例として： ＊「読んだ本の内容を要約して話す」 他の意味としては、約束を結ぶこと。またはその約束を指します。"
+model_obj = " 要約とは、文章などの要点をとりまとめることです。 一例として「読んだ本の内容を要約して話す」などがあります。 他の意味としては、約束を結ぶこと、また約束を指します。"
+reference_obj = " Refernce: goo辞書 https://dictionary.goo.ne.jp/word/%E8%A6%81%E7%B4%84/ よう‐やく〔エウ‐〕【要約】 の解説 ［名］(スル) １ 文章などの要点をとりまとめること。また、そのまとめたもの。「読んだ本の内容を―して話す」 ２ 約束を結ぶこと。また、約束。 「こう云う余所行(よそゆき)の感情を不断に維持するにはどれ丈(だけ)の―がいるか」〈鴎外・雁〉"
+
 
 # Slice the long string from the given files into sentence strings
 list_of_rewrite = slice_japanese_text(rewrite_obj)
@@ -126,6 +128,7 @@ display_detect_letters_and_sentences(list_of_rewrite, list_of_reference)
 
 '''
 Sample Run
+
  - - - - - Compare your rewrite and model summary  - - - - - 
 
 
@@ -146,10 +149,7 @@ Consecutive letters:
 「読んだ本の内容を要約して話す
 
 Your rewrite sentence: 
-一例として：
-＊「読んだ本の内容を要約して話す」
-
-他の意味としては、約束を結ぶこと
+一例として： ＊「読んだ本の内容を要約して話す」 他の意味としては、約束を結ぶこと
 
 Compare the model: 
 一例として「読んだ本の内容を要約して話す」などがあります
@@ -161,10 +161,7 @@ Consecutive letters:
 他の意味としては、約束を結ぶこ
 
 Your rewrite sentence: 
-一例として：
-＊「読んだ本の内容を要約して話す」
-
-他の意味としては、約束を結ぶこと
+一例として： ＊「読んだ本の内容を要約して話す」 他の意味としては、約束を結ぶこと
 
 Compare the model: 
 他の意味としては、約束を結ぶこと、また約束を指します
@@ -182,13 +179,6 @@ Your rewrite sentence:
 要約とは、文章などの要点をとりまとめることです
 
 Compare the model: 
-Refernce: goo辞書
- https://dictionary.goo.ne.jp/word/%E8%A6%81%E7%B4%84/
- 
- よう‐やく〔エウ‐〕【要約】 の解説
-［名］(スル)
-
-    １ 文章などの要点をとりまとめること
-
+Refernce: goo辞書 https://dictionary.goo.ne.jp/word/%E8%A6%81%E7%B4%84/ よう‐やく〔エウ‐〕【要約】 の解説 ［名］(スル) １ 文章などの要点をとりまとめること
 
 '''
